@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="dist/wu-icons-style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Rubik&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <span id="logo">WeatherUpdate</span>
+    </header>
+    <form action="#">
+        <section class="wrapper">
+            <i class="fas fa-search"></i>
+            <input class="search" name="city" type="text" id="city" placeholder="Enter city...">
+        </section>
+        <button type="submit" hidden>Get weather</button>
+    </form>
+
+    <section id="main-weather">
+        <div class="condition">
+            <i class="wu wu-128 wu-black wu-day wu-sleet"></i>
+            <h1>50 &#176;C</h1>
+        </div>
+        <div class="weather-info">
+            <h2 class="location">MANILA, PH</h2>
+            <p class="description">Weather description: <span>broken clouds</span></p>
+            <p class="feelsLike">Feels Like: <span>50 </span>&#176;C</p>
+            <p class="humidity">Humidity: <span>50</span>%</p>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e371241f19.js" crossorigin="anonymous"></script>
+</body>
+</html>
