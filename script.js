@@ -1,8 +1,6 @@
 const form = document.querySelector("form");
 const button = document.querySelector("button");
-const searchIcon = document.querySelector(".fa-search");
 button.addEventListener("click", handleClick);
-searchIcon.addEventListener("click", handleClick);
 form.addEventListener("submit", handleClick);
 
 // based on weather id
@@ -17,7 +15,7 @@ const weatherIcon = {
 };
 
 async function getWeatherData(city) {
-  const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=be1b6339eebe391c30c07d12a933e795`, {mode: 'cors'});
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=be1b6339eebe391c30c07d12a933e795`, {mode: 'cors'});
 
   if (response.status === 400 || response.status === 404) {
     return;
