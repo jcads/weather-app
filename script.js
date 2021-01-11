@@ -3,6 +3,7 @@ const button = document.querySelector("button");
 const searchIcon = document.querySelector(".fa-search");
 button.addEventListener("click", handleClick);
 searchIcon.addEventListener("click", handleClick);
+form.addEventListener("submit", handleClick);
 
 // based on weather id
 const weatherIcon = {
